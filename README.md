@@ -16,7 +16,7 @@ vault-archive 是一个 Obsidian 桌面插件，可以把长期未修改的笔�
 
 支持 Windows 和 macOS 桌面版，要求 Obsidian 1.5.0 或更高版本。
 
-1. 从 [Releases](https://github.com/FenchD/vault-archive/releases/latest) 下载 `vault-archive-*-obfuscated.zip`。
+1. 从 [Releases](https://github.com/FenchD/vault-archive/releases/latest) 下载 `vault-archive-2.3.1.zip`。
 2. 解压后，将整个 `vault-archive` 文件夹放入**要整理的源库**的 `.obsidian/plugins/`。如果 `plugins` 目录还没有，可以先创建。最终路径应为 `<源库>/.obsidian/plugins/vault-archive/main.js`。
 3. 重新打开源库，在 **设置 → 第三方插件** 中启用 **vault-archive**。
 
@@ -42,9 +42,16 @@ vault-archive 是一个 Obsidian 桌面插件，可以把长期未修改的笔�
 - 在**高级选项**中可开启**删除归档后变空的文件夹**。默认关闭，开启后清理本批操作留下的空源目录。
 - 开启**归档后 Git 提交并推送**前，请确保桌面端能运行 Git，归档库的根目录是一个工作区干净的 Git 仓库，当前分支已配置远程跟踪分支（upstream），并已配置提交作者和推送凭证。
 
-## 免费使用与反馈
+## 免费使用与许可
 
-vault-archive 是闭源项目，可以免费下载和使用。GitHub Releases 提供混淆后的安装包，第三方依赖的许可证和声明随包附带。
+vault-archive 是闭源项目。插件的全部功能均可免费使用，无需注册插件账号。使用许可和第三方声明见 [LICENSE](LICENSE) 和 [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt)。
+
+## 文件访问与网络连接
+
+- 插件读取源库中的笔记及附件，并写入你选择的独立归档目录。校验归档副本后，插件会移除对应的源文件。启用空目录清理后，也会删除本批归档留下的空目录。
+- 归档在本地进行，插件不收集遥测数据。启用 Git 推送后，插件会调用本机 Git，将归档提交发送到归档库当前分支配置的远程 Git 仓库。
+
+## 反馈与交流
 
 如果遇到问题，或希望支持某种归档场景，欢迎提交 Issue，也可以用微信扫下方二维码加我交流。我会根据反馈和实际使用需求更新插件。[提交 Issue](https://github.com/FenchD/vault-archive/issues)
 

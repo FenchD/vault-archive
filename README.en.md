@@ -16,7 +16,7 @@ I wanted a smaller vault for everyday use and separate archive vaults for older 
 
 The plugin supports Obsidian 1.5.0 or later on Windows and macOS desktop.
 
-1. Download `vault-archive-*-obfuscated.zip` from [Releases](https://github.com/FenchD/vault-archive/releases/latest).
+1. Download `vault-archive-2.3.1.zip` from [Releases](https://github.com/FenchD/vault-archive/releases/latest).
 2. Unzip it and copy the entire `vault-archive` folder into `.obsidian/plugins/` inside **the source vault you want to archive from**. Create the `plugins` folder if needed. The resulting path should be `<source-vault>/.obsidian/plugins/vault-archive/main.js`.
 3. Reopen the source vault and enable **vault-archive** under **Settings → Community plugins**.
 
@@ -42,9 +42,16 @@ To upgrade, finish any active archive job and disable the plugin. Replace the in
 - Under **Advanced options**, turn on **Remove folders emptied by archiving** to clean up source folders left empty by the current batch. This setting is off by default.
 - Before turning on **Commit and push after archiving**, make sure Git is available and the archive vault is the root of a clean Git working tree. Configure an upstream for its current branch, a commit author, and working push credentials.
 
-## Free use and feedback
+## Free use and license
 
-vault-archive is closed-source and free to download and use. GitHub Releases distributes the obfuscated install package with third-party licenses and notices.
+vault-archive is closed-source. All plugin features are free to use and require no plugin account. See the [license](LICENSE) and [third-party notices](THIRD-PARTY-NOTICES.txt).
+
+## File access and network use
+
+- The plugin reads notes and attachments in the source vault and writes them to the separate archive directory you choose. It verifies the archive copies before removing the original files. If folder cleanup is enabled, it removes source directories emptied by the current archive run.
+- Archiving runs locally and the plugin collects no telemetry. If you enable Git push, the plugin calls your local Git executable to send the archive commit to the remote configured for the current branch of the archive repository.
+
+## Feedback
 
 If you run into a problem or have a feature request, open an issue or scan the WeChat QR code below to get in touch. I’ll use feedback and real archiving needs to guide future updates. [Open an issue](https://github.com/FenchD/vault-archive/issues)
 

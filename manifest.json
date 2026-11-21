@@ -1,0 +1,9 @@
+{
+  "id": "vault-archive",
+  "name": "Vault Archive",
+  "version": "2.3.1",
+  "minAppVersion": "1.5.0",
+  "description": "Move older notes and their attachments to a separate vault while preserving their folder structure.",
+  "author": "FenchD",
+  "isDesktopOnly": true
+}
