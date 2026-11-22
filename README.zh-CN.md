@@ -16,7 +16,7 @@ vault-archive 是一个 Obsidian 桌面插件，可以把长期未修改的笔�
 
 支持 Windows 和 macOS 桌面版，要求 Obsidian 1.5.0 或更高版本。
 
-1. 从 [Releases](https://github.com/FenchD/vault-archive/releases/latest) 下载 `vault-archive-2.3.1.zip`。
+1. 从 [Releases](https://github.com/FenchD/vault-archive/releases/latest) 下载 `vault-archive-<version>.zip`。
 2. 解压后，将整个 `vault-archive` 文件夹放入**要整理的源库**的 `.obsidian/plugins/`。如果 `plugins` 目录还没有，可以先创建。最终路径应为 `<源库>/.obsidian/plugins/vault-archive/main.js`。
 3. 重新打开源库，在 **设置 → 第三方插件** 中启用 **vault-archive**。
 

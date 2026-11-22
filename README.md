@@ -16,7 +16,7 @@ I wanted a smaller vault for everyday use and separate archive vaults for older 
 
 The plugin supports Obsidian 1.5.0 or later on Windows and macOS desktop.
 
-1. Download `vault-archive-2.3.1.zip` from [Releases](https://github.com/FenchD/vault-archive/releases/latest).
+1. Download `vault-archive-<version>.zip` from [Releases](https://github.com/FenchD/vault-archive/releases/latest).
 2. Unzip it and copy the entire `vault-archive` folder into `.obsidian/plugins/` inside **the source vault you want to archive from**. Create the `plugins` folder if needed. The resulting path should be `<source-vault>/.obsidian/plugins/vault-archive/main.js`.
 3. Reopen the source vault and enable **vault-archive** under **Settings → Community plugins**.
 
